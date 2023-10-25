@@ -29,9 +29,9 @@ const os = process.env.PLAYWRIGHT_SERVICE_OS || 'linux';
 
 export default defineConfig(config, {
   // Define more generous timeout for the service operation if necessary.
-   timeout: 120000,
+   timeout: 180000,
    expect: {
-     timeout: 10000,
+     timeout: 30000,
    },
   workers: 20,
 
