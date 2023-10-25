@@ -71,6 +71,6 @@ export default defineConfig({
   webServer: {
     command: 'npm run dev',
     url: 'http://127.0.0.1:3020',
-    reuseExistingServer: !process.env.CI,
+    reuseExistingServer: process.env.CI,
   },
 });
