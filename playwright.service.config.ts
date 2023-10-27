@@ -29,11 +29,11 @@ const os = process.env.PLAYWRIGHT_SERVICE_OS || 'linux';
 
 export default defineConfig(config, {
   // Define more generous timeout for the service operation if necessary.
-   timeout: 30000,
+   //timeout: 30000,
    expect: {
-     timeout: 30000,
+     timeout: 20000,
    },
-  workers: 20,
+  workers: 8,
 
   // Enable screenshot testing and configure directory with expectations.
   // https://learn.microsoft.com/azure/playwright-testing/how-to-configure-visual-comparisons
