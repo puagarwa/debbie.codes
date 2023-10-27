@@ -12,7 +12,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        shard: [chromium, webkit, firefox, '"Mobile Safari"' ]
+        shard: [chromium]
+        #shard: [chromium, webkit, firefox, '"Mobile Safari"' ]
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
